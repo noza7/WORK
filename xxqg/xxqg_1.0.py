@@ -56,9 +56,9 @@ def watch_videos():
     browser.get(VIDEO_LINK)
     # xpath_pat = '//*[@id="root"]/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[%d]/div[1]/div/div/div[1]/span'
     xpath_pat = '//*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[%d]/div[%d]/div/div/div[1]/span'
-               # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[1]/div[2]/div/div/div[1]/span
-               # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[2]/div[1]/div/div/div[1]/span
-               # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[1]/div[1]/div/div/div[1]/span
+    # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[1]/div[2]/div/div/div[1]/span
+    # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[2]/div[1]/div/div/div[1]/span
+    # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[1]/div[1]/div/div/div[1]/span
     # //*[@id="root"]/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div/section/div/div/div/div/div[3]/section/div/div/div/div/div/div/section/div[3]/section/div/div/div[1]/div[3]/div[1]/div/div/div[1]/span
     #
     #
@@ -88,7 +88,9 @@ def watch_videos():
             browser.switch_to.window(all_handles[0])
 
     browser.get(TEST_VIDEO_LINK)
-    time.sleep(3010 - spend_time)
+    print('spend_time:', spend_time)
+    # time.sleep(3010 - spend_time)
+    time.sleep(4490 - spend_time)
     print("播放视频完毕\n")
 
 
